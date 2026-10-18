@@ -6,5 +6,11 @@
   "workers_dev": true,
   "observability": {
     "enabled": true
-  }
+  },
+  "kv_namespaces": [
+    {
+      "binding": "FLYER_VAULT",
+      "id": "6b1356ed3296415781ee9f3446be7e79"
+    }
+  ]
 }
