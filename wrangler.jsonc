@@ -3,14 +3,9 @@
   "name": "kathys-cart-north-vancouver",
   "main": "index.js",
   "compatibility_date": "2026-10-18",
+  "compatibility_flags": ["nodejs_compat"],
   "workers_dev": true,
-  "observability": {
-    "enabled": true
-  },
-  "kv_namespaces": [
-    {
-      "binding": "FLYER_VAULT",
-      "id": "6b1356ed3296415781ee9f3446be7e79"
-    }
-  ]
+  "observability": { "enabled": true },
+  "kv_namespaces": [{ "binding": "FLYER_VAULT", "id": "6b1356ed3296415781ee9f3446be7e79" }],
+  "triggers": { "crons": ["0 16 * * 0", "0 16 * * 4"] }
 }
